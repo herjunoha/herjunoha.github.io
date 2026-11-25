@@ -89,6 +89,7 @@ window.CONTENT = {
         excerptCaption: `Excerpt from case file 02, step 3: checking the evaluator before the loop starts`,
         excerptFigure: EVALUATOR_FIGURE,
         casesLink: `Read the three case files`,
+        github: { label: `GitHub`, url: `https://github.com/herjunoha` },
         cases: {
             pageTitle: `Case files, Herjuno Hestu Adhimarta`,
             metaDescription: `Three case files on testing AI agents. Each is rebuilt on a synthetic target, with the setup committed before the run.`,

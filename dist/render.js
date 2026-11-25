@@ -241,7 +241,8 @@
                     '<p class="meta excerpt-cap">' + esc(H.excerptCaption) + "</p>" +
                     figure(H.excerptFigure) +
                     "</div>" +
-                    '<p class="go"><a href="cases.html">' + esc(H.casesLink) + "</a></p>" +
+                    '<p class="go"><a href="cases.html">' + esc(H.casesLink) + "</a>" +
+                    '<a class="btn" href="' + esc(H.github.url) + '" rel="noopener">' + esc(H.github.label) + "</a></p>" +
                     "</section>";
         }
         setHead(meta);

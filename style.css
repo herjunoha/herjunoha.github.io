@@ -91,7 +91,7 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .brand {
   display: inline-flex; align-items: center; min-height: 44px;
-  font-weight: 500; letter-spacing: -.01em; text-decoration: none;
+  font-size: 1.125rem; font-weight: 600; letter-spacing: -.02em; text-decoration: none;
 }
 .nav { display: flex; flex-wrap: wrap; align-items: center; margin-left: -.625rem; }
 .nav a {

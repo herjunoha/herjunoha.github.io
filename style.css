@@ -137,9 +137,16 @@ h1 {
 .excerpt .fig { margin: 0; padding: .75rem .75rem .5rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
 
 /* Home: one proof excerpt, then one way on to the case files. */
-.go { margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.5rem; }
+.go { margin: 1.5rem 0 0; }
 .go a { display: inline-flex; align-items: center; min-height: 44px; }
-/* Outline button: surface fill, hairline border, the one 6px radius, mono label. */
+
+/* Home: GitHub section. Same row grammar as the stage pages: hairline, mono label, content.
+   Reason: a visitor who finished the proof can find the public code in one place. */
+.repos { list-style: none; margin: 1.25rem 0 0; padding: 0; }
+.repos li { display: grid; padding: 0 0 .5rem; }
+.repos a { justify-self: start; display: inline-flex; align-items: center; min-height: 44px; font: 500 .875rem var(--font-data); letter-spacing: -.01em; }
+.repos span { color: var(--ink-2); max-width: 34rem; }
+.row .go { margin-top: 1rem; }
 .go a.btn {
   padding: 0 1rem; background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius); color: var(--ink); text-decoration: none;

@@ -194,6 +194,8 @@
         }).join("");
         const paras = H.about.paragraphs.map((p) => "<p>" + rich(p) + "</p>").join("");
         const jobs = H.about.experience.map((e) => '<p><span class="years">' + rich(e.years) + "</span><br>" + rich(e.role) + "</p>").join("");
+        const G = H.github;
+        const repos = G.repos.map((r) => '<li><a href="' + esc(r.url) + '" rel="noopener">' + esc(r.name) + "</a><span>" + esc(r.text) + "</span></li>").join("");
         const email = H.contact.emailIsDummy ? "[[" + H.contact.email + "]]" : H.contact.email;
         // Stage heading: the h1 names the stage, a lede says what is in it.
         const head = (title, ledeHtml) => '<section class="stagehead"><h1 class="page-title">' + esc(title) + "</h1>" + ledeHtml + "</section>";
@@ -241,8 +243,14 @@
                     '<p class="meta excerpt-cap">' + esc(H.excerptCaption) + "</p>" +
                     figure(H.excerptFigure) +
                     "</div>" +
-                    '<p class="go"><a href="cases.html">' + esc(H.casesLink) + "</a>" +
-                    '<a class="btn" href="' + esc(H.github.url) + '" rel="noopener">' + esc(H.github.label) + "</a></p>" +
+                    '<p class="go"><a href="cases.html">' + esc(H.casesLink) + "</a></p>" +
+                    "</section>" +
+                    '<section class="list" aria-labelledby="gh-label">' +
+                    '<div class="row"><h2 class="label" id="gh-label">' + esc(G.label) + "</h2><div>" +
+                    '<p class="claim">' + esc(G.lede) + "</p>" +
+                    '<ul class="repos">' + repos + "</ul>" +
+                    '<p class="go"><a class="btn" href="' + esc(G.profile.url) + '" rel="noopener">' + esc(G.profile.text) + "</a></p>" +
+                    "</div></div>" +
                     "</section>";
         }
         setHead(meta);

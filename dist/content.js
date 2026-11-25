@@ -89,7 +89,15 @@ window.CONTENT = {
         excerptCaption: `Excerpt from case file 02, step 3: checking the evaluator before the loop starts`,
         excerptFigure: EVALUATOR_FIGURE,
         casesLink: `Read the three case files`,
-        github: { label: `GitHub`, url: `https://github.com/herjunoha` },
+        github: {
+            label: `GitHub`,
+            lede: `Some of what I build is public.`,
+            repos: [
+                { name: `verdictloop`, url: `https://github.com/herjunoha/verdictloop`, text: `An improvement loop for an AI agent or chatbot. It keeps an edit only if the verdict says it is really better.` },
+                { name: `greenfield-pipeline`, url: `https://github.com/herjunoha/greenfield-pipeline`, text: `Claude Code plugins that deliver software from scratch and take an idea to a won deal. Validated on fixtures only.` },
+            ],
+            profile: { url: `https://github.com/herjunoha`, text: `github.com/herjunoha` },
+        },
         cases: {
             pageTitle: `Case files, Herjuno Hestu Adhimarta`,
             metaDescription: `Three case files on testing AI agents. Each is rebuilt on a synthetic target, with the setup committed before the run.`,

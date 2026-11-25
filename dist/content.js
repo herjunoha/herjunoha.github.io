@@ -93,8 +93,8 @@ window.CONTENT = {
             label: `GitHub`,
             lede: `Some of what I build is public.`,
             repos: [
-                { name: `verdictloop`, url: `https://github.com/herjunoha/verdictloop`, text: `An improvement loop for an AI agent or chatbot. It keeps an edit only if the verdict says it is really better.` },
-                { name: `greenfield-pipeline`, url: `https://github.com/herjunoha/greenfield-pipeline`, text: `Claude Code plugins that deliver software from scratch and take an idea to a won deal.` },
+                { name: `verdictloop`, url: `https://herjunoha.github.io/verdictloop/`, text: `An improvement loop for an AI agent or chatbot. It keeps an edit only if the verdict says it is really better.` },
+                { name: `greenfield-pipeline`, url: `https://herjunoha.github.io/greenfield-pipeline/`, text: `Claude Code plugins that deliver software from scratch and take an idea to a won deal.` },
             ],
             profile: { url: `https://github.com/herjunoha`, text: `github.com/herjunoha` },
         },

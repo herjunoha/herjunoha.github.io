@@ -133,6 +133,7 @@
             '<a class="brand" href="index.html">' + esc(S.name) + "</a>" +
             '<nav class="nav" aria-label="Main">' +
             navLink("cases.html", S.nav.cases, "cases", "case") +
+            navLink("writing.html", S.nav.writing, "writing") +
             navLink("about.html", S.nav.about, "about") +
             navLink("contact.html", S.nav.contact, "contact") +
             "</nav>" +
@@ -169,7 +170,7 @@
         m.setAttribute("content", P.metaDescription);
     }
     // ---- stages -----------------------------------------------------------
-    // One page per stage: home, cases, about, contact. A visitor sees
+    // One page per stage: home, cases, writing, about, contact. A visitor sees
     // one stage at a time and moves between them with the nav.
     function stage(which) {
         const H = C.home;
@@ -203,6 +204,10 @@
             meta = H.cases;
             main = head(H.cases.label, lede(esc(H.cases.intro))) +
                 '<section class="list" aria-label="' + esc(H.cases.label) + '">' + cases + "</section>";
+        }
+        else if (which === "writing") {
+            meta = H.writing;
+            main = head(H.writing.label, lede(esc(H.writing.intro)));
         }
         else if (which === "about") {
             meta = H.about;

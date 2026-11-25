@@ -31,7 +31,7 @@
   (ANALYSIS.md, PAGE.md, STATUS.md, README.md in each). Numbers come from real
   runs only. Wording is "in this setup" because each case is one small run.
 
-  Pages: index.html (home), cases.html, about.html and
+  Pages: index.html (home), cases.html, writing.html, about.html and
   contact.html each show one stage. The nav moves between them. A stage page
   is a copy of index.html with its own data-page value.
 
@@ -72,6 +72,7 @@ window.CONTENT = {
         draftNote: ``,
         nav: {
             cases: `Case files`,
+            writing: `Writing`,
             about: `About`,
             contact: `Contact`,
         },
@@ -116,6 +117,12 @@ window.CONTENT = {
                     meta: `4 criteria, 3 verified, 1 unverified, 6 human decisions`,
                 },
             ],
+        },
+        writing: {
+            pageTitle: `Writing, Herjuno Hestu Adhimarta`,
+            metaDescription: `Building trust in AI agents by getting evidence out of them.`,
+            label: `Writing`,
+            intro: `Coming soon.`,
         },
         about: {
             pageTitle: `About, Herjuno Hestu Adhimarta`,

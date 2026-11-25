@@ -122,7 +122,8 @@ window.CONTENT = {
             pageTitle: `Writing, Herjuno Hestu Adhimarta`,
             metaDescription: `Building trust in AI agents by getting evidence out of them.`,
             label: `Writing`,
-            intro: `Coming soon.`,
+            intro: `Building trust in AI agents by getting evidence out of them.`,
+            soon: `Coming soon.`,
         },
         about: {
             pageTitle: `About, Herjuno Hestu Adhimarta`,

@@ -207,7 +207,8 @@
         }
         else if (which === "writing") {
             meta = H.writing;
-            main = head(H.writing.label, lede(esc(H.writing.intro)));
+            main = head(H.writing.label, lede(esc(H.writing.intro))) +
+                '<p class="soon">' + esc(H.writing.soon) + "</p>";
         }
         else if (which === "about") {
             meta = H.about;
